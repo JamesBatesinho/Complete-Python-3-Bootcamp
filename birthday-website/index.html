@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Apoorva! 🎉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="emoji-field" aria-hidden="true">
+  <span class="floaty" style="--x:6%; --delay:0s; --dur:9s; --size:2.6rem;">🥭</span>
+  <span class="floaty" style="--x:16%; --delay:1.2s; --dur:11s; --size:3rem;">🇮🇳</span>
+  <span class="floaty" style="--x:27%; --delay:2.4s; --dur:8s; --size:2.4rem;">🎩</span>
+  <span class="floaty" style="--x:38%; --delay:0.6s; --dur:10s; --size:2.8rem;">💅</span>
+  <span class="floaty" style="--x:49%; --delay:1.8s; --dur:9.5s; --size:3.2rem;">🐶</span>
+  <span class="floaty" style="--x:60%; --delay:3s; --dur:8.5s; --size:2.5rem;">🥭</span>
+  <span class="floaty" style="--x:71%; --delay:0.3s; --dur:10.5s; --size:2.7rem;">🇮🇳</span>
+  <span class="floaty" style="--x:81%; --delay:2s; --dur:9s; --size:2.6rem;">🎩</span>
+  <span class="floaty" style="--x:90%; --delay:1s; --dur:11.5s; --size:3rem;">💅</span>
+  <span class="floaty" style="--x:95%; --delay:2.6s; --dur:8s; --size:2.9rem;">🐶</span>
+  <span class="floaty" style="--x:10%; --delay:4s; --dur:10s; --size:2.3rem;">💅</span>
+  <span class="floaty" style="--x:33%; --delay:3.6s; --dur:9s; --size:2.6rem;">🐶</span>
+  <span class="floaty" style="--x:55%; --delay:4.4s; --dur:8.5s; --size:2.4rem;">🥭</span>
+  <span class="floaty" style="--x:76%; --delay:3.2s; --dur:9.5s; --size:2.8rem;">🎩</span>
+  <span class="floaty" style="--x:87%; --delay:4.8s; --dur:10s; --size:2.5rem;">🇮🇳</span>
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+
+<main class="wrap">
+
+  <header class="hero">
+    <p class="ribbon">🎂 It's Your Birthday! 🎂</p>
+    <h1 class="title">Happy Birthday,<br><span class="name">Apoorva</span> <span class="wave">🎉🥳🎈</span></h1>
+    <p class="subtitle">Mangoes 🥭 · India in my heart 🇮🇳 · fancy hats 🎩 · pretty nails 💅 · and our dog 🐶 — all the things that make you, <em>you</em>. Here's to celebrating the best person I know!</p>
+  </header>
+
+  <section class="card form-card">
+    <h2>🎁 Pick Our Birthday Adventure!</h2>
+    <p class="card-sub">You choose, I'm in. Vote for your favourite plan for the big day 👇</p>
+
+    <form id="birthday-form">
+
+      <label class="option">
+        <input type="radio" name="plan" value="odyssey">
+        <span class="option-card">
+          <span class="option-emoji">🎬🛍️</span>
+          <span class="option-text">
+            <span class="option-title">Odyssey &amp; IMAX</span>
+            <span class="option-desc">Watch a film at the IMAX, then shopping at MetroCentre</span>
+          </span>
+        </span>
+      </label>
+
+      <label class="option">
+        <input type="radio" name="plan" value="alnmouth">
+        <span class="option-card">
+          <span class="option-emoji">🏖️🥾</span>
+          <span class="option-text">
+            <span class="option-title">Alnmouth Adventure</span>
+            <span class="option-desc">Head to Alnmouth and hike in nature</span>
+          </span>
+        </span>
+      </label>
+
+      <label class="option">
+        <input type="radio" name="plan" value="jesmond">
+        <span class="option-card">
+          <span class="option-emoji">🌳🍽️</span>
+          <span class="option-text">
+            <span class="option-title">Jesmond Dene Day</span>
+            <span class="option-desc">Stroll through Jesmond Dene and lunch in Jesmond</span>
+          </span>
+        </span>
+      </label>
+
+      <label class="option">
+        <input type="radio" name="plan" value="filmtown">
+        <span class="option-card">
+          <span class="option-emoji">🎥🍕</span>
+          <span class="option-text">
+            <span class="option-title">Film &amp; City Lunch</span>
+            <span class="option-desc">Watch a film, then lunch in Newcastle city centre</span>
+          </span>
+        </span>
+      </label>
+
+      <label class="option">
+        <input type="radio" name="plan" value="baltic">
+        <span class="option-card">
+          <span class="option-emoji">🎨🚶</span>
+          <span class="option-text">
+            <span class="option-title">Baltic &amp; Quayside</span>
+            <span class="option-desc">Explore the Baltic Gallery and wander the Quayside</span>
+          </span>
+        </span>
+      </label>
+
+      <button type="submit" class="submit-btn">Lock In My Birthday Choice 💜</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <p class="result-emoji">🎉🐶🥭</p>
+      <p id="result-text"></p>
+      <button id="reset-btn" class="reset-btn">Change My Mind</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with 💜 just for you. Happy Birthday! 🥭🇮🇳🎩💅🐶</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
